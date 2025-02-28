@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrinho de Compras</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Carrinho de Compras</h1>
-    <div class="carrinho">
-      <div class="item">
-        <span class="nome">Hambúrguer Clássico</span>
-        <span class="preco">R$ 20,00</span>
-        <span class="quantidade">1x</span>
-        <button class="remover">Remover</button>
-      </div>
-      <div class="item">
-        <span class="nome">Batata Frita</span>
-        <span class="preco">R$ 12,00</span>
-        <span class="quantidade">2x</span>
-        <button class="remover">Remover</button>
-      </div>
-      <div class="item">
-        <span class="nome">Refrigerante</span>
-        <span class="preco">R$ 8,00</span>
-        <span class="quantidade">1x</span>
-        <button class="remover">Remover</button>
-      </div>
-    </div>
+    <header>
+        <h1>Carrinho de Compras iFood</h1>
+    </header>
+    <main>
+        <h2>Seu Carrinho</h2>
+        <div class="cart">
+            <!-- Cabeçalho dos rótulos -->
+            <div class="cart-header">
+                <span class="header-produto">Produto</span>
+                <span class="header-preco">Preço</span>
+                <span class="header-quantidade">Quantidade</span>
+                <span class="header-total">Total</span>
+    
+            </div>
 
-    <div class="total">
-      Total: R$ 52,00
-    </div>
+            <!-- Itens do Carrinho -->
+            <div class="cart-item">
+                <img src="images/pizza.jpg" alt="pizza">
+                <div class="details">
+                    <p>Pizza Italiana</p>
+                    <p class="category">Categoria</p>
+                </div>
+                <p class="price">R$ 45,00</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+                <p class="total">R$ 90,00</p>
+                <button class="remove">&times;</button>
+            </div>
 
-    <button class="finalizar">Finalizar Compra</button>
-  </div>
+            <div class="cart-item">
+                <img src="images/hamburguer.jpg" alt="hamburguer">
+                <div class="details">
+                    <p>Hambúrguer Artesanal</p>
+                    <p class="category">Categoria</p>
+                </div>
+                <p class="price">R$ 20,00</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+                <p class="total">R$ 40,00</p>
+                <button class="remove">&times;</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="images/batata.jpg" alt="batata">
+                <div class="details">
+                    <p>Batata Frita</p>
+                    <p class="category">Categoria</p>
+                </div>
+                <p class="price">R$ 12,00</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+                <p class="total">R$ 24,00</p>
+                <button class="remove">&times;</button>
+            </div>
+        </div>
+
+        <!-- Resumo da Compra -->
+        <aside class="summary">
+            <h3>Resumo da compra</h3>
+            <p>Sub-total <span>R$ 154,00</span></p>
+            <p>Frete <span>Gratuito</span></p>
+            <p>Adicionar cupom de desconto</p>
+            <p class="total-price">Total <span>R$ 154,00</span></p>
+            <button class="checkout">FINALIZAR COMPRA</button>
+        </aside>
+    </main>
 </body>
 </html>
